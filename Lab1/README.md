@@ -91,4 +91,30 @@ Once that's done (could be 5-10 minutes), we enter the algod box.
 ```
 Now we're inside the algod container (this makes it easier to make with goal and tealdbg later in this Lab).
 
+Next we're going to get our account addresses.
+
+First we get our accounts
+```bash
+goal accounts list
+```
+
+*Note: This is a dev environment that is just on your machine, so DO NOT send real algos or any assets to these addresses*
+
+Now we store each of these as an environment variable for use later (I will be using ONE, TWO, and THREE). These environment variables will dissappear if you end the session, so you may also want to record them elsewhere.
+
+To store environment variables, we use `export VAR_NAME=VARIABLE`, then to reference them later we use `$VAR_NAME`.
+
+This is what it looks like when I do it
+
+![Account list being stored in variables using the format export ONE=AccountNumber](./store_accounts_list.png)
+
+Great! Now we're ready for the other sections.
+
+[Creating and transferring assets](Assets.md)
+
+[Deploy and call a smart contract through the command line](./SmartContracts.md)
+
+[Using Tealdbg to step through a smart contract](./Tealdbg.md)
+
+
 
