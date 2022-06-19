@@ -13,6 +13,14 @@ Global indicates that the value is stored in the application on the ledger, and 
 
 As this is a relatively simple app, we only have 1 global int (the counter), and no application args are required at creation time.
 
+First, we move to the data directory which will allow us to access the shared docker volume that we set up earlier.
+
+```bash
+cd /data
+```
+
+Next we deploy the app.
+
 ```bash
 goal app create --creator $ONE --approval-prog Lab1/approval.teal --clear-prog Lab1/clear.teal --global-ints 1 --global-byteslices 0  --local-ints 0 --local-byteslices 0
 ```

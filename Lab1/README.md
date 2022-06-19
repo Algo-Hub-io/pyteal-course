@@ -87,7 +87,7 @@ This will download all of the relevant docker images and setup the sandbox - it 
 Once that's done (could be 5-10 minutes), we enter the algod box.
 
 ```bash
-./sandbox enter aglod
+./sandbox enter algod
 ```
 Now we're inside the algod container (this makes it easier to make with goal and tealdbg later in this Lab).
 
