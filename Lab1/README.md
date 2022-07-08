@@ -95,7 +95,7 @@ Next we're going to get our account addresses.
 
 First we get our accounts
 ```bash
-goal accounts list
+goal account list
 ```
 
 *Note: This is a dev environment that is just on your machine, so DO NOT send real algos or any assets to these addresses*
