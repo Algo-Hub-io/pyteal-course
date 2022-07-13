@@ -60,7 +60,7 @@ We then put our password in as we are accessing the wallet.
 
 You may notice that this is slower than when we were working in dev, this is because we are interacting with the live testnet, so we have to wait for our transaction to be included.
 
-![Transaction outcome with app index](./newAccount.png)
+![Transaction outcome with app index](./appIndex.png)
 
 At the end of the transaction outcome, you will see the last line is `Created app with app index 98720790` (your number will be different); this number is your App ID - copy this down as we will be using it later.
 
