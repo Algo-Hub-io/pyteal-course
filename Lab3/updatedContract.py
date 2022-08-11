@@ -25,10 +25,8 @@ def approval_program():
 
     deduct_global = Seq([
         scratchCount.store(App.globalGet(Bytes("Count"))),
-         If(scratchCount.load() > Int(0),
-             App.globalPut(Bytes("Count"), scratchCount.load() - Int(1)),
-         ),
-         Return(Int(1))
+        App.globalPut(Bytes("Count"), scratchCount.load() - Int(1)),
+        Return(Int(1))
     ])
 
     add_local = Seq([
@@ -39,9 +37,7 @@ def approval_program():
 
     deduct_local = Seq([
         localCount.store(App.localGet(Txn.sender(), Bytes("Count"))),
-        If(localCount.load() > Int(0),
-            App.localPut(Txn.sender(), Bytes("Count"), localCount.load() - Int(1)),
-        ),
+        App.localPut(Txn.sender(), Bytes("Count"), localCount.load() - Int(1)),
         Return(Int(1))
     ])
 

@@ -2,23 +2,23 @@
 txn ApplicationID
 int 0
 ==
-bnz main_l24
+bnz main_l20
 txn OnCompletion
 int OptIn
 ==
-bnz main_l23
+bnz main_l19
 txn OnCompletion
 int CloseOut
 ==
-bnz main_l22
+bnz main_l18
 txn OnCompletion
 int UpdateApplication
 ==
-bnz main_l21
+bnz main_l17
 txn OnCompletion
 int DeleteApplication
 ==
-bnz main_l20
+bnz main_l16
 txn OnCompletion
 int NoOp
 ==
@@ -32,15 +32,15 @@ assert
 txna ApplicationArgs 0
 byte "Add_Global"
 ==
-bnz main_l19
+bnz main_l15
 txna ApplicationArgs 0
 byte "Deduct_Global"
 ==
-bnz main_l16
+bnz main_l14
 txna ApplicationArgs 0
 byte "Add_Local"
 ==
-bnz main_l15
+bnz main_l13
 txna ApplicationArgs 0
 byte "Deduct_Local"
 ==
@@ -51,22 +51,15 @@ txn Sender
 byte "Count"
 app_local_get
 store 1
-load 1
-int 0
->
-bnz main_l14
-main_l13:
-int 1
-return
-main_l14:
 txn Sender
 byte "Count"
 load 1
 int 1
 -
 app_local_put
-b main_l13
-main_l15:
+int 1
+return
+main_l13:
 txn Sender
 byte "Count"
 app_local_get
@@ -79,25 +72,18 @@ int 1
 app_local_put
 int 1
 return
-main_l16:
+main_l14:
 byte "Count"
 app_global_get
 store 0
-load 0
-int 0
->
-bnz main_l18
-main_l17:
-int 1
-return
-main_l18:
 byte "Count"
 load 0
 int 1
 -
 app_global_put
-b main_l17
-main_l19:
+int 1
+return
+main_l15:
 byte "Count"
 app_global_get
 store 0
@@ -108,19 +94,19 @@ int 1
 app_global_put
 int 1
 return
-main_l20:
+main_l16:
 int 0
 return
-main_l21:
+main_l17:
 int 0
 return
-main_l22:
+main_l18:
 int 0
 return
-main_l23:
+main_l19:
 int 1
 return
-main_l24:
+main_l20:
 byte "Count"
 int 0
 app_global_put

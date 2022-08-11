@@ -28,10 +28,8 @@ def approval_program():
 
     deduct = Seq([
         scratchCount.store(App.globalGet(Bytes("Count"))),
-         If(scratchCount.load() > Int(0),
-             App.globalPut(Bytes("Count"), scratchCount.load() - Int(1)),
-         ),
-         Return(Int(1))
+        App.globalPut(Bytes("Count"), scratchCount.load() - Int(1)),
+        Return(Int(1))
     ])
 
     # 5 - create a local version of add and deduct
