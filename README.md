@@ -1,6 +1,6 @@
 # AlgoHUB's PyTeal Course Labs
 
-Welcome to the AlgoHUB PyTeal Blockchain Development course. This course is designed to help you learn how to program smart contracts on the Algorand Blockchain using Pyteal language which is based on Python programming language. 
+Welcome to the AlgoHUB PyTeal Blockchain Development course. This course is designed to help you learn how to program smart contracts on the Algorand Blockchain using Pyteal language which is based on Python programming language. For more information on this course head to www.algo-hub.io
 
 The Course is broken into 3 units, you can watch the videos, complete the experiential labs and then complete the assessments 
 
