@@ -8,6 +8,7 @@ These examples will be running on a Macbook Pro running MacOS, but can also be u
 - A computer
 - Docker/Docker-compose
 - a code editor (I will be using VSCode - free software available for all platforms [here](https://code.visualstudio.com/))
+For windows you might need https://learn.microsoft.com/en-us/windows/wsl/install
 
 ## Environment setup
 For this exercise we will be using [Algorand Sandbox](https://github.com/algorand/sandbox). In our live video we will walk through the setup for MacOS, but the github linked above has tips for all environments.
