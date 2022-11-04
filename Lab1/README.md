@@ -8,7 +8,17 @@ These examples will be running on a Macbook Pro running MacOS, but can also be u
 - A computer
 - Docker/Docker-compose
 - a code editor (I will be using VSCode - free software available for all platforms [here](https://code.visualstudio.com/))
-For windows you might need https://learn.microsoft.com/en-us/windows/wsl/install
+- For windows you might need https://learn.microsoft.com/en-us/windows/wsl/install
+
+*** <span style="color:yellow">Note for Windows user </span>: you may need to install `python` in your terminal. As python command can be varied on different machines, so to check if your machine have python installed, try these to see which is the right command to use:
+```bash
+python --version
+# OR
+python3 --version
+# OR
+py --version
+```
+This [link](https://medium.com/co-learning-lounge/how-to-download-install-python-on-windows-2021-44a707994013) will help you with the installation if you need to do so.
 
 ## Environment setup
 For this exercise we will be using [Algorand Sandbox](https://github.com/algorand/sandbox). In our live video we will walk through the setup for MacOS, but the github linked above has tips for all environments.
