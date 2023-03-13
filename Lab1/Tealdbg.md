@@ -23,6 +23,12 @@ We add `--listen 0.0.0.0` to the command as we are running the debugger inside a
 
 ![Tealdbg commands showing that the tealdbg debug session has started](./tealdbg.png)
 
-If you copy and paste the link for Chrome devtools, you can view the debug session in Chrome (or Brave) browser.
+If you copy and paste the link for Chrome devtools, you can view the debug session in Chrome (or Brave) browser. However, we can also manually open the Chrome devtools and connect to the debugger by:
+- Going to: `chrome://inspect/#devices`.
+- Clicking on `Configure...`.
+- Adding `localhost:9392` to the list of address in "Target discovery settings".
+- Clicking on `Done`.
+
+The Algorand debugger will now show up in the list of devices. Start the debugger by clicking on `Inspect`.
 
 This will allow you to step through the TEAL contract using the step through button.
